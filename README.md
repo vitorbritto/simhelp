@@ -22,11 +22,9 @@ var pnm   = pkg.name,        // => Sim Help
     repo  = pkg.repo;        // => https://github.com/vitorbritto/simhelp
 
 // Show Help
-help
-    .main(pnm, ver, desc)
-    .options('-b', '--build', 'run your application')
-    .detail(aut, lic, repo);
-
+help.main(pnm, ver, desc)
+    .option('b', 'build', 'run your application')
+    .details(aut, lic, repo);
 
 // => console.log('');
 // => console.log(' ------------------------------------------------------------------------------');
