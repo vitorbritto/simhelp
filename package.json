@@ -1,0 +1,23 @@
+{
+  "name": "simhelp",
+  "version": "0.1.0",
+  "description": "Generate a simple help based on your package.json manifest.",
+  "main": "index.js",
+  "files": ["index.js"],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitorbritto/simhelp"
+  },
+  "keywords": [
+    "simhelp", "instructions", "help", "usage"
+  ],
+  "author": "Vitor Britto <code@vitorbritto.com.br> (http://vitorbritto.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitorbritto/simhelp/issues"
+  },
+  "homepage": "https://github.com/vitorbritto/simhelp"
+}
