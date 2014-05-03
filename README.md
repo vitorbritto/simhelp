@@ -27,10 +27,10 @@ help.main(pnm, ver, desc)
     .details(aut, lic, repo);
 
 // => console.log('');
-// => console.log(' ------------------------------------------------------------------------------');
+// => console.log(' -----------------------------------------------------------------');
 // => console.log(' Sim Help - v0.1.0');
 // => console.log(' Generate a simple help based on your package.json manifest.');
-// => console.log(' ------------------------------------------------------------------------------');
+// => console.log(' -----------------------------------------------------------------');
 // => console.log('');
 // => console.log(' Usage: simhelp [options]');
 // => console.log('');
@@ -43,7 +43,7 @@ help.main(pnm, ver, desc)
 // => console.log(' Copyright (c) Vitor Britto);
 // => console.log(' Licensed under the MIT license);
 // => console.log(' https://github.com/vitorbritto/simhelp);
-// => console.log(' ------------------------------------------------------------------------------');
+// => console.log(' -----------------------------------------------------------------');
 // => console.log('');
 ```
 
