@@ -9,7 +9,7 @@
 
 'use strict';
 
-var Help = function() {
+var Help = function Help() {
 
     var _this = this;
 
