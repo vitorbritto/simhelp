@@ -1,6 +1,6 @@
 # Sim Help
 
-Using your `package.json` manifest to generate a simple help for your applications.
+Using your `package.json` manifest to generate a simple help for your applications. [![NPM version](https://badge.fury.io/js/simhelp.svg)](http://badge.fury.io/js/simhelp) [![GitHub version](https://badge.fury.io/gh/vitorbritto%2Fsimhelp.svg)](http://badge.fury.io/gh/vitorbritto%2Fsimhelp)
 
 ## Install
 
@@ -11,7 +11,7 @@ Using your `package.json` manifest to generate a simple help for your applicatio
 ```javascript
 // Init Config
 var help = require('simhelp'),
-    pkg  = require('./package');
+    pkg  = require('./package);
 
 // Program Information
 var pnm   = pkg.name,        // => Sim Help
@@ -25,26 +25,28 @@ var pnm   = pkg.name,        // => Sim Help
 help.main(pnm, ver, desc)
     .option('b', 'build', 'run your application')
     .details(aut, lic, repo);
+```
 
-// => console.log('');
-// => console.log(' -----------------------------------------------------------------');
-// => console.log(' Sim Help - v0.1.0');
-// => console.log(' Generate a simple help based on your package.json manifest.');
-// => console.log(' -----------------------------------------------------------------');
-// => console.log('');
-// => console.log(' Usage: simhelp [options]');
-// => console.log('');
-// => console.log(' Options:');
-// => console.log('     -h, --help      output usage information');
-// => console.log('     -v, --version   output the version number');
-// => console.log('     -b, --build     run your application');
-// => console.log('');
-// => console.log('');
-// => console.log(' Copyright (c) Vitor Britto);
-// => console.log(' Licensed under the MIT license);
-// => console.log(' https://github.com/vitorbritto/simhelp);
-// => console.log(' -----------------------------------------------------------------');
-// => console.log('');
+**RETURN**
+
+```
+-----------------------------------------------------------------
+Sim Help - v0.1.0
+Generate a simple help based on your package.json manifest.
+-----------------------------------------------------------------
+
+Usage: simhelp [options]
+
+Options:
+    -h, --help      output usage information
+    -v, --version   output the version number
+    -b, --build     run your application
+
+
+Copyright (c) Vitor Britto
+Licensed under the MIT license
+https://github.com/vitorbritto/simhelp
+-----------------------------------------------------------------
 ```
 
 ## License
