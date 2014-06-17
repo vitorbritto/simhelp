@@ -1,6 +1,6 @@
-# Sim Help
+# Sim Help [![NPM version](https://badge.fury.io/js/simhelp.svg)](http://badge.fury.io/js/simhelp) [![GitHub version](https://badge.fury.io/gh/vitorbritto%2Fsimhelp.svg)](http://badge.fury.io/gh/vitorbritto%2Fsimhelp)
 
-Using your `package.json` manifest to generate a simple help for your applications. [![NPM version](https://badge.fury.io/js/simhelp.svg)](http://badge.fury.io/js/simhelp) [![GitHub version](https://badge.fury.io/gh/vitorbritto%2Fsimhelp.svg)](http://badge.fury.io/gh/vitorbritto%2Fsimhelp)
+Using your `package.json` manifest to generate a simple help for your applications.
 
 ## Install
 
