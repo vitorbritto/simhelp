@@ -1,6 +1,6 @@
 {
   "name": "simhelp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Generate a simple help based on your package.json manifest.",
   "main": "index.js",
   "files": ["index.js"],

@@ -4,14 +4,16 @@ Using your `package.json` manifest to generate a simple help for your applicatio
 
 ## Install
 
-    npm install simhelp
+```bash
+$ npm install simhelp
+```
 
 ## Usage
 
 ```javascript
 // Init Config
 var help = require('simhelp'),
-    pkg  = require('./package);
+    pkg  = require('./package');
 
 // Program Information
 var pnm   = pkg.name,        // => Sim Help
@@ -22,7 +24,10 @@ var pnm   = pkg.name,        // => Sim Help
     repo  = pkg.repo;        // => https://github.com/vitorbritto/simhelp
 
 // Show Help
-help.main(pnm, ver, desc)
+help
+    .main(pnm, ver, desc)
+    .option('h', 'help', 'output help message')
+    .option('v', 'version', 'output app version')
     .option('b', 'build', 'run your application')
     .details(aut, lic, repo);
 ```
