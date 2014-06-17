@@ -13,23 +13,31 @@ var Help = function Help() {
 
     var _this = this;
 
-    this.main = function(pkgname, pkgversion, pkgdesc) {
+    this.main = function(pkgname, pkgversion, pkgdesc, cmds) {
         console.log('');
         console.log(' ------------------------------------------------------------------------------');
         console.log(' %s - %s', pkgname.toUpperCase(), pkgversion);
         console.log(' %s', pkgdesc);
         console.log(' ------------------------------------------------------------------------------');
         console.log('');
-        console.log(' Usage: %s [options]', pkgname);
+        console.log(' Usage: %s %s [options]', pkgname, cmds);
         console.log('');
-        console.log(' Options:');
-        console.log('     -h, --help      output usage information');
-        console.log('     -v, --version   output the version number');
+        return _this;
+    };
+
+    this.head = function(type) {
+        console.log('');
+        console.log(' ' + type);
+        return _this;
+    };
+
+    this.command = function(cmd, desc) {
+        console.log( '\t\t%s\t%s', cmd, desc);
         return _this;
     };
 
     this.option = function(alias, flag, desc) {
-        console.log('     -%s, --%s      %s', alias, flag, desc);
+        console.log( '\t\t-%s, --%s\t%s', alias, flag, desc);
         return _this;
     };
 
@@ -44,5 +52,4 @@ var Help = function Help() {
 
 };
 
-exports = module.exports = new Help;
-exports.Help = Help;
+module.exports = exports = new Help();
